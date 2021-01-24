@@ -36,7 +36,17 @@ class Curso
 		}
 		catch(Exception $e)
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, ocurrio un error al obtener los datos");
+				location.href="index.php?x=curso";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -52,7 +62,17 @@ class Curso
 			return $stm->fetch(PDO::FETCH_OBJ);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, ocurrio un error al obtener los datos");
+				location.href="index.php?x=curso";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -66,7 +86,17 @@ class Curso
 			$stm->execute(array($id));
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, ocurrio un error al Eliminar");
+				location.href="index.php?x=curso";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -95,7 +125,17 @@ class Curso
 				);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, ocurrio un error al Actualizar");
+				location.href="index.php?x=curso";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -119,7 +159,17 @@ class Curso
 			);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, ocurrio un error al Guardar");
+				location.href="index.php?x=curso";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 }

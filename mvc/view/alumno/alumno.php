@@ -14,7 +14,7 @@
                 <th style="width:120px;">Nacimiento</th>
                 <th style="width:60px;"></th>
                 <th style="width:60px;"></th>
-                <th style="width:60px;"></th>
+                
             </tr>
         </thead>
         <tbody>
@@ -25,9 +25,7 @@
                 <td><?php echo $r->Correo; ?></td>
                 <td><?php echo $r->Sexo == 1 ? 'Hombre' : 'Mujer'; ?></td>
                 <td><?php echo $r->FechaNacimiento; ?></td>
-                <td>
-                    <a href="?c=Alumno&a=Inscribir&x=0&id=<?php echo $r->id; ?>">Inscribir a Curso</a>
-                </td>
+               
                 <td>
                     <a href="?c=Alumno&a=Crud&x=0&id=<?php echo $r->id; ?>">Editar</a>
                 </td>

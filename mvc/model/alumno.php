@@ -37,7 +37,17 @@ class Alumno
 		}
 		catch(Exception $e)
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, Ha ocurrido un problema");
+				location.href="index.php?x=alumno";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -96,7 +106,17 @@ class Alumno
 				);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos,No ha sido posible Actualizar");
+				location.href="index.php?x=alumno";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 
@@ -120,7 +140,17 @@ class Alumno
 			);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			die('
+			 <script>
+			 function mensaje() {
+ 
+				alert("Lo sentimos, Existe un dato mal registrado en el formulario");
+				location.href="index.php?x=alumno";
+			   }
+				
+			   setTimeout(mensaje,1000);
+			   </script>
+			');
 		}
 	}
 }

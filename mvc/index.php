@@ -18,6 +18,9 @@ if(!isset($_REQUEST['x']))
         <div class="well well-sm text-right">
                 <a class="btn btn-primary" href="?x=curso">Cursos</a>
         </div>
+        <div class="well well-sm text-right">
+                <a class="btn btn-primary" href="?x=inscripcion">Inscripcion</a>
+        </div>
 <?php 
         require_once 'view/footer.php';
 }
